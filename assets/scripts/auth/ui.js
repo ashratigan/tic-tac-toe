@@ -9,11 +9,11 @@ const signUpSuccess = function (data) {
 
 const signInSuccess = function (data) {
   $('#userMessage').text('Signed in successfully')
-  $('.userButtons').css('display', 'block')
+  $('.seeInfo').css('display', 'block')
   $('.signInUp').css('display', 'none')
   $('.sign-inup-buttons').css('display', 'none')
   $('#sign-in')[0].reset()
-  $('#chooseUser').css('display', 'block')
+  // $('#chooseUser').css('display', 'block')
   store.user = data.user
 }
 

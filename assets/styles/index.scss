@@ -75,7 +75,7 @@ input {
 // SETTINGS FOR GAMEBOARD
 // **********************
 #chooseUser {
-    display: none;
+    // display: none;
     padding-top: 30px;
     font-size: 18px;
 }
@@ -84,9 +84,9 @@ input {
 }
 
 
-#gameboard {
-    display: none;		
-}
+// #gameboard {
+//     display: none;		
+// }
 table {
     margin: auto;
     font-size: 70px;
@@ -138,7 +138,7 @@ td {
 #change-password {
     display: none;
 }
-.userButtons {
+#seeInfo {
    display: none;		
 }
 
@@ -171,6 +171,10 @@ footer > p {
     background-size: cover;
 }
 
+.welcome > h3 {
+    color: #111;
+    text-shadow: 2px 2px 4px #eee;
+}
 // **********************
 // SETTINGS FOR RESET BUTTONS
 // **********************
