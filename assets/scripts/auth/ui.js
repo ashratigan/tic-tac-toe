@@ -20,7 +20,6 @@ const signInSuccess = function (data) {
 const changePasswordSuccess = function (data) {
   $('#changedPassword').text('Password changed successfully')
   $('#changedPassword').delay(3200).fadeOut(300)
-  // $('#changedPassword').css('background-color', '#103656')
   $('#change-password').css('display', 'none')
   $('#change-password')[0].reset()
 }
@@ -49,14 +48,12 @@ const movesSuccess = function () {
 const getGamesSuccess = function (data) {
   for (let i = 0; i < data.games.length; i++) {
     $('#view-games').append('<p><b>ID:</b>' + data.games[i].id + '    <b>Game Squares</b>' + data.games[i].cells + '</p>')
-    // console.log(data.games[i])
   }
 }
 
 const failure = function () {
   $('#userMessage').text('Error')
   $('#userMessage').css('background-color', '#800')
-  // console.log('Failure ran. Error is :', error)
 }
 
 module.exports = {

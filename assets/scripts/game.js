@@ -71,8 +71,6 @@ selectUserTwo.onchange = function () {
 }
 
 function updateUserTwo (icon) {
-  // html.style.backgroundColor = bgColor
-  // html.style.color = textColor
   userTwo = icon
 }
 
@@ -99,9 +97,6 @@ const gameValues = {
 const playerMoves = $('.col1, .col2, .col3').click(function (square) {
   if (winner === '' && square.target.innerHTML === '') {
     displayCurrentUser(currentUser)
-    // console.log(square.target.innerHTML)
-    // console.log(square.target)
-    // console.log(square)
     if (currentUser === userOne) {
       $(this).html(userTwo)
       currentUser = userTwo
@@ -120,7 +115,7 @@ const playerMoves = $('.col1, .col2, .col3').click(function (square) {
 
 // ************************
 // function to determine winner
-// // ************************
+// ************************
 const sq = function (number) {
   return document.getElementById(number).innerText
 }
